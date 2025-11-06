@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-form">
+            <!-- <h4>Register </h4> -->
+            <h3 class="subtitle"> Create a user account🚹</h3>
+
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="text" id="first-name" name="first-name" placeholder="Your_name👤" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="last-name" name="last-name" placeholder="Your_Surname👤" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Your@gmail.com📩" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="password" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="confirm-password🔒" required>
+                    </div>
+                    <div class="show-password-group">
+                        <input type="checkbox" id="show-password" onclick="togglePasswordVisibility()">
+                        <label for="show-password"> 👁️</label>
+                    </div>
+
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                </div>
+            </form>
+            </div>
+
+                <div class="login-redirect">
+                    <p>
+                        <span style="color: #420ec6;">Already have an account?</span>
+                    <button onclick="window.location.href='login.html'">Login</button></p>
+                </div>
+
+        </div>
+    </div>
+
+<!--Javascript to toggle password visibility-->
+
+<script>
+function togglePasswordVisibility() {
+    const password = document.getElementById("password");
+    const confirmPassword = document.getElementById("confirm-password");
+    const type = password.type === "password" ? "text" : "password";
+    password.type = type;
+    confirmPassword.type = type;
+}
+</script>
+</body>
+</html>

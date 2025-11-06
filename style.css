@@ -1,0 +1,225 @@
+
+/*Basic Reset and Body Styling*/
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, hwb(55 27% 50%), #d9e2ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: hsl(0, 94%, 56%);
+    background-image: url('Background photo.jpg');
+}
+/* Centered Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.signup-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    margin: auto;
+    height: 100vh;
+    background-image: linear-gradient(#10c01ccc,hsla(240, 59%, 57%, 0.341)), url('Background\ photo.jpg');
+    box-shadow: hsl(288, 89%, 46%) 0 10px 25px lch(26% 106.02 306.64 / 0.904);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/* Form login-Container */
+.login-container {
+   background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    margin: auto;
+    height: 80vh;
+    background-image: linear-gradient(#10c01ccc,hsla(240, 59%, 57%, 0.341)),url('Background\ photo.jpg');
+    box-shadow: hsl(288, 89%, 46%) 0 10px 25px lch(38.46% 122.53 309.43 / 0.904);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/* Form forget-Container */
+.forget-container {
+   background-color: #ffffff;
+    padding: 70px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    margin: auto;
+    height: 80vh;
+    background-image: linear-gradient(#10c01ccc,hsla(240, 59%, 57%, 0.341)), url('Background\ photo.jpg');
+    box-shadow: brown 0 10px 25px lch(26% 106.02 306.64 / 0.904);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Form Heading */
+.signup-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #002c8b; /* dark blue */
+    font-weight: 600;
+}
+
+/* Input Field Groups (Label + Input) */
+.input-group {
+    margin-bottom: 19px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: hsl(0, 68%, 46%);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: hsl(29, 82%, 51%);
+}
+
+.input-group input::placeholder {
+    color: hwb(252 11% 19%);
+}
+
+/* Log In Button */
+.signup-btn {
+   width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: brown;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn{
+   width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: brown;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.forget-btn{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: brown;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #2980b9;
+}
+.login-btn:hover {
+    background-color: #2980b9;
+}
+.forget-btn:hover {
+    background-color: #2980b9;
+}
+/* Forgot Password Link */
+.forget-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forget-link:hover {
+    text-decoration: underline;
+}
+
+/* Signup Redirect Text */
+.login-redirect {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+.login-redirect {
+  text-align: center;
+  margin-top: 2.3px;
+}
+
+.login-redirect button {
+  background-color:blue;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-redirect button:hover {
+  background-color: hwb(136 7% 21%);
+}
+
+
+/* Optional Custom Button Style */
+.button {
+    padding: 6px 12px;
+    border: 2px solid red;
+    border-radius: 6px;
+    background-color: yellow;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: orange;
+}
+.subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color:hsl(0, 2%, 9%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.show-password-group {
+    margin: 10px 0;
+    font-size: 0.95rem;
+    color: #333;
+}

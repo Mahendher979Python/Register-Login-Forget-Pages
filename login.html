@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="login-container">
+        <div class="signup-form">
+             <h1 class="subtitle">Login</h1>
+
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Your@gmail.com📩" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+
+
+                   <button type="submit" class="login-btn">Log In</button>
+
+                 <!-- Corrected Forget Password button -->
+                <a href="forget.html" class="forget-link" style="color: hsl(250, 50%, 2%);">Forgot Password?</a>
+                </div>
+            </form>
+
+               <div class="login-redirect">
+                    <p>
+                        <span style="color: #420ec6;">Don't have an account?</span>
+                    <button onclick="window.location.href='singup.html'">Register</button></p>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
